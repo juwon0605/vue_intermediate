@@ -6,8 +6,11 @@
     </span>
 
     <custom-modal v-if="showModal" @close="showModal = false">
-      <h3 slot="header">경고!</h3>
-      <h3 slot="body">무언가를 입력하세요.</h3>
+      <h3 slot="header">
+        경고!
+        <i class="closeModalBtn fa fa-times" aria-hidden="true" @click="showModal = false"> </i>
+      </h3>
+      <h3 slot="body">아무것도 입력하지 않았습니다.</h3>
     </custom-modal>
   </div>
 </template>
